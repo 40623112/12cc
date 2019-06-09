@@ -98,9 +98,8 @@ init_mathjax();
 <script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
 -->
 
-<script type="text/javascript">
-if ((location.href.search(/http:/) != -1) && (location.href.search(/login/) != -1)) window.location= 'https://' + location.host + location.pathname + location.search;
-</script></head><body>
+</head>
+<body>
 <div class='container'><nav>
         
     <div class="site-wrap">
@@ -117,14 +116,14 @@ if ((location.href.search(/http:/) != -1) && (location.href.search(/login/) != -
             <header class="site-navbar py-4 bg-white" role="banner">
               <div class="container-fluid">
                 <div class="row align-items-center">
-                <h1>CMSimfly - 動靜皆宜的簡潔網際內容管理</h1>
+                <h1>40623112協同產品設計-個人網站</h1>
                 <div class="pl-4">
                     <form>
                     <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
                     </form>
                 </div>
                   <!-- <div class="col-11 col-xl-2">
-                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">CMSimfly - 動靜皆宜的簡潔網際內容管理</a></h1> 
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">40623112協同產品設計-個人網站</a></h1> 
                   </div>
                   -->
                   <div class="col-12 col-md-10 d-none d-xl-block">
@@ -137,7 +136,7 @@ if ((location.href.search(/http:/) != -1) && (location.href.search(/login/) != -
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='簡介.html'>簡介</a><li><a href='目錄結構.html'>目錄結構</a><li class='has-children'><a href='頁面編輯.html'>頁面編輯</a><ul class='dropdown'><li class='has-children'><a href='插入程式碼.html'>插入程式碼</a><ul class='dropdown'><li><a href='Java 程式碼.html'>Java 程式碼</a><li><a href='Python 程式碼.html'>Python 程式碼</a><li><a href='C或C++程式碼.html'>C或C++程式碼</a><li><a href='Lua 程式碼.html'>Lua 程式碼</a><li><a href='Javascript 程式碼.html'>Javascript 程式碼</a><li><a href='Html 原始碼.html'>Html 原始碼</a></li></li></ul></ul><li><a href='網際簡報.html'>網際簡報</a><li><a href='網誌編輯.html'>網誌編輯</a><li><a href='已知錯誤.html'>已知錯誤</a></li>
+                     <li><a href='簡介.html'>簡介</a><li><a href='學員出席.html'>學員出席</a><li><a href='onshape協同操作.html'>onshape協同操作</a><li><a href='V-REP模擬.html'>V-REP模擬</a><li><a href='Github倉儲管理.html'>Github倉儲管理</a><li><a href='程式開發.html'>程式開發</a><li><a href='心得.html'>心得</a><li><a href='期末影片.html'>期末影片</a><li><a href='自評分數.html'>自評分數</a></li>
                       </ul>
                 </nav>
               </div>
@@ -148,36 +147,10 @@ if ((location.href.search(/http:/) != -1) && (location.href.search(/login/) != -
           </div>
           
         </header>
-    <div id="tipue_search_content">C或C++程式碼 << <a href='C或C++程式碼.html'>Previous</a> <a href='Javascript 程式碼.html'>Next</a> >> Javascript 程式碼<br /><h1>Lua 程式碼</h1>
-<pre class="brush:lua;auto-links:false;toolbar:false" contenteditable="false">-- 導入 js 模組
-js = require("js")
--- 取得 window
-window = js.global
--- 猜小於或等於 n 的整數
-big = 100
--- 計算猜測次數, 配合 while 至少會猜一次
-num = 1
--- 利用 window:prompt 方法回應取得使用者所猜的整數
-guess = window:prompt("請猜一個介於 1 到 "..big.." 的整數")
--- 利用數學模組的 random 函數以亂數產生答案
-answer = math.random(big)
-output = ""
--- 若沒猜對, 一直猜到對為止
-while answer ~= tonumber(guess) do
-    if answer &gt; tonumber(guess) then
-        output = "猜第 "..num.." 次, guess="..guess..", answer="..answer.." - too small"
-        print(output)
-    else
-        output = "猜第 "..num.." 次, guess="..guess..", answer="..answer.." - too big"
-        print(output)
-    end 
-    guess = window:prompt(output..", 請猜一個介於 1 到 "..big.." 的整數")
-    num = num + 1
-end
-print("總共猜了 "..num.." 次, answer=guess="..answer.." - correct")
-    </pre>
-<p></p>
-<br />C或C++程式碼 << <a href='C或C++程式碼.html'>Previous</a> <a href='Javascript 程式碼.html'>Next</a> >> Javascript 程式碼</div>
+    <div id="tipue_search_content">Github倉儲管理 << <a href='Github倉儲管理.html'>Previous</a> <a href='心得.html'>Next</a> >> 心得<br /><h1>程式開發</h1>
+<p><span style="color: #ff0000;">參與程式開發0%</span></p>
+<p><span style="color: #000000;">對於操作電腦的熟悉度我比別人稍低所以執行上就比較慢，但我盡力完成我被指定的項目，對於沒參與到程式開發深感惋惜</span></p>
+<br />Github倉儲管理 << <a href='Github倉儲管理.html'>Previous</a> <a href='心得.html'>Next</a> >> 心得</div>
         
     <!-- footer -->
       <div class="container">
